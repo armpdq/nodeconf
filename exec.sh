@@ -6,3 +6,9 @@ apt-get install iptables-persistent -y
 iptables -I INPUT -p tcp -s 0.0.0.0/0 --dport 88 -j ACCEPT
 invoke-rc.d iptables-persistent save
 service nginx restart
+mkdir checkmailapi
+cd checkmailapi
+wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/index.js -O /checkmailtest/index.js
+wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/package.json -O /checkmailtest/package.json
+npm install
+npm install -g forever
