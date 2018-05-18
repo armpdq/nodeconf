@@ -8,7 +8,7 @@ invoke-rc.d iptables-persistent save
 service nginx restart
 mkdir checkmailapi
 cd checkmailapi
-wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/index.js -O /checkmailtest/index.js
-wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/package.json -O /checkmailtest/package.json
+wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/index.js -O /checkmailapi/index.js
+wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/package.json -O /checkmailapi/package.json
 npm install
 npm install -g forever
