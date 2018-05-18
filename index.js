@@ -25,7 +25,7 @@ app.use(helmet());
   catchalltest : true, // default false
   timeout: 1500 // default 5000
 }).then(result => {
-  console.log(result);
+  //console.log(result);
 res.send(result);
 
   // INVALID - email regexp validation failed
@@ -45,5 +45,5 @@ res.send(result);
   });
 
 app.listen('3478', function() {
-    console.log('Server started on port 3478, proxied by Nginx on 88');
+    //console.log('Server started on port 3478, proxied by Nginx on 88');
   });
