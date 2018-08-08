@@ -23,7 +23,7 @@ app.use(helmet());
   to: value,
   debug: false, // default false
   catchalltest : true, // default false
-  timeout: 5000 // default 5000
+  timeout: 10000 // default 5000
 }).then(result => {
   //console.log(result);
 res.send(result);
