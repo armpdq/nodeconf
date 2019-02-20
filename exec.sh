@@ -12,3 +12,4 @@ wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/index.js -O /
 wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/package.json -O /root/checkmailapi/package.json
 npm install
 npm install -g forever
+wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/zb-mail-verif.js -O /root/checkmailapi/node_modules/zb-email-verifier/index.js
