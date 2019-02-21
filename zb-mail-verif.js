@@ -55,9 +55,9 @@ module.exports = {
 
         const exchange = _(results).sortBy(v => v.priority).take(1).value()[0].exchange;
         MXDomain = exchange;
-        if(MXDomain.search('google') > 0) {
+        if(MXDomain.search('google') > 0 || MXDomain.search('GOOGLE') > 0) {
           MXDomain = 'gsuite';
-        } else if(MXDomain.search('outlook') > 0) {
+        } else if(MXDomain.search('outlook') > 0 || MXDomain.search('outlook') > 0) {
           MXDomain = 'outlook';
         }
         debug('\t' + exchange);
