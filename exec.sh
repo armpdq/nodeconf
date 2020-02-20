@@ -13,4 +13,4 @@ wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/package.json 
 npm install
 npm install -g forever
 wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/zb-mail-verif.js -O /root/checkmailapi/node_modules/zb-email-verifier/index.js
-/usr/sbin/ufw allow 88/tcp
+ufw disable
