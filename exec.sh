@@ -13,4 +13,7 @@ wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/package.json 
 npm install
 npm install -g forever
 wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/zb-mail-verif.js -O /root/checkmailapi/node_modules/zb-email-verifier/index.js
-ufw disable
+systemctl disable ufw apparmor
+systemctl stop ufw apparmor
+echo "@reboot /usr/sbin/ufw disable" > /root/disable
+crontab /root/disable
