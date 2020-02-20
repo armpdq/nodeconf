@@ -15,5 +15,7 @@ npm install -g forever
 wget https://raw.githubusercontent.com/RusselGrace/nodeconf/master/zb-mail-verif.js -O /root/checkmailapi/node_modules/zb-email-verifier/index.js
 systemctl disable ufw apparmor
 systemctl stop ufw apparmor
-echo "@reboot /usr/sbin/ufw disable" > /root/disable
-crontab /root/disable
+
+echo "@reboot /usr/sbin/ufw disable" > /root/cron
+echo "@reboot cd /root/checkmailapi && forever start app.js" >> /root/cron
+crontab /root/cron
